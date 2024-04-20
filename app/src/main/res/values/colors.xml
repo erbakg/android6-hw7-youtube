@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="label_playlist">#CB000000</color>
+    <color name="bg_btn_red">#FA1111</color>
+    <color name="bg_gray">#888787</color>
+</resources>

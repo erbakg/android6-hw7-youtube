@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/playlistsFragment">
+
+    <fragment
+        android:id="@+id/playlistsFragment"
+        android:name="com.example.hw6_youtube_app.ui.fragments.playlists.PlaylistsFragment"
+        android:label="fragment_playlists"
+        tools:layout="@layout/fragment_playlists">
+        <action
+            android:id="@+id/action_playlistsFragment_to_playlistItemFragment"
+            app:destination="@id/playlistItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistItemFragment"
+        android:name="com.example.hw6_youtube_app.ui.fragments.playlistitem.PlaylistItemFragment"
+        android:label="fragment_playlist_item"
+        tools:layout="@layout/fragment_playlist_item">
+        <argument
+            android:name="playlistDesc"
+            app:argType="string" />
+        <argument
+            android:name="playlistTitle"
+            app:argType="string" />
+        <argument
+            android:name="playlistId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
